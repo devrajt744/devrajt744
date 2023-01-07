@@ -5,15 +5,16 @@
         <meta name="description" content="About Web Programming">
         <meta name="keywords" content="HTML">
         <meta name="author" content="Devraj Tamang">
-	
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<style>
 		   .profile{
 		       box-shadow: 4px 20px 20px  10px #403A39;
 			   max-width:300px;
 			   margin-left: 20px;
-			   text-align: center;		   
+			   text-align: center;				   
 		    }
-			
+						
 			h2{
 	        border: 10px solid #787270;
             border-radius: 100px;
@@ -39,7 +40,7 @@
                 border-radius:100px;
                 font-family: cursive;
                 font-size: 20px;				
-                top:5%;
+                top:10%;
                 left:22%;  
                 position: absolute;
              }
@@ -61,20 +62,62 @@
 			tr:nth-child(even) {
 			  background-color:  #d0d0d0;
 			}
-		
-		    div {
-			 left: calc(-25% + 100px);
+					
+			.fa {
+			  padding:10px;
+			  font-size:10px;
+			  width:10px;
+			  text-align:center;
+			  text-decoration:none;
+			  margin:5px 2px;
 			}
+			
+			.fa:hover{
+			  opacity: 0.7;
+			}
+		    
+			.fa-facebook {
+			  background: #3B5998;
+			  color: white;
+			}
+			
+			.fa-instagram {
+			  background: #992600;
+			  color: white;
+			}
+			
+			.fa-whatsapp {
+			  background: #009933;
+			  color: white;
+			}
+			
+			.hide {
+              display: none;
+            }
+    
+             .myHov:hover + .hide {
+               display: block;
+               color: #002db3;
+            }
 		
 		</style>
 		
 	</head>
 <body bgcolor="grey">
-
+       
+	   <center>
+		  <audio controls autoplay loop>
+           <source src="audio.mp3" type="audio/mpeg">
+           Your browser does not support the audio element.
+           </audio>
+	    </center>
+	   	
 		
-	   
 	<div class="profile">   
+	
+	   <div class="myHov">
        <img src="devrajt74.jpg"  alt="Profile picture" width="250" height="200" />
+	  
       <div>
          <center> 
 	       <address>
@@ -83,7 +126,9 @@
 	              Mailing address: <a href="mailto:devrajt744@gmail.com"> Send an email</a> <br>
 	              606-8115, 11 Amitie Ichijoji 03,Satono NishimaChi Sakyo Ward, <br>
 	              Kyoto, Japan<br> 
-				  <a href="tel:+819068311797"> Call now</a>
+				  <a href="tel:+819068311797"> <img src="callicon.png" width="35px" height="30px"></a>
+				  
+				 
 	       </address>
          </center>
 	   </div>
@@ -94,7 +139,8 @@
     
 	   </div> -->
 	   
-	   
+	    </div>
+		<div class="hide">Hello! there. Namaste<i class="fa fa-hand-peace-o" style="font-size:15px;color:#002db3"></i></div>
     </div>
 	
 	
@@ -113,7 +159,7 @@
 	<br>
 	
 	<center>
-	      <h2> Educational Qualification </h2>
+	     <h2> <blink>Educational Qualification </h2>
 	 </center> 
 	 
 	 <table>
@@ -212,19 +258,51 @@
 		
 	 </table> <hr>
 	 
-	     <center> 
+	    	
+	<center>
+	    <h3> Suggestion </h3>
+	</center>
+	
+	<fieldset>
+	 <legend> <b> Suggestion </b> </legend>
+	
+	
+	 <form action="/action_page.php">
+	    <p> Email</br> <input type="text" placeholder="Type Email Address" name="email" size="50"/> </p>
+	    <p> Organization name</br> <input type="text" placeholder="Type organization name" name="org" size="50"/> </p>
+	    <!-- <p> Suggestion</br> <input type="text" placeholder="Suggest me.." name="suggest"/> </p> -->
+        <p>Suggestion </br><textarea id="suggestion" name="suggest"  rows="5" cols="50" placeholder="Appreciate your valuable suggestion,, 70 words max." autofocus></textarea><br>	</p>  
+	    <p> Today's date </br>
+		<input type="date" name="date" autofocus required /> </p>
+	    <input type="submit" value="submit" autofocus> 
+	 </form>
+	</fieldset>
+	
+	
+ <!--
+     <div class="myHov">Hover over me.</div>
+      <div class="hide">I am shown when someone hovers over the div above.</div>  -->
+
+     <center> 
 	       <address>
 	             &copy TAMANG DEVRAJ<br>
 	              Kyoto, Japan<br> 				  
 				  <details>
-				    <summary> Contact detail</summary> 
-					<p>  <a href="tel:+819068311797"> +80 9068311797</a> </p>
+				    <summary> Connect via social media</summary> 			
+					<a href="https://www.facebook.com/devrajt74" class="fa fa-facebook"></a>
+					<a href="https://www.instagram.com/devraj07tamang/" class="fa fa-instagram"></a>
+					<a href="tel:+819068311797" class="fa fa-whatsapp" ></a> </p>
 				  </details>
 	       </address>
-         </center>
-		 
-		 
+    </center>
 	
+	
+		
+	<!-- 
+	     <iframe src="https://www.linkedin.com/" height="250px" width="250"> </iframe>
+         LinkedIn refused to connect.....  
+	-->
+	  
 </body>
 </html>
 
